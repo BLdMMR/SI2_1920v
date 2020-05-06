@@ -40,7 +40,7 @@ create table UCdeCurso (
 
 create table Ano(
 	ano			int, 
-	semestre	int, 
+	semestre	int check (semestre in (1, 2)), 
 	sig_curs	varchar(6),
 	primary key (ano, semestre, sig_curs)
 );
@@ -79,9 +79,10 @@ create table Ensina(
 	primary key (sig_uc, prof_cc)
 );
 
-create table ConcluiCurso(
+create table Matricula(
 	num_aluno	int references Aluno(num_aluno),
-	sig_curs	varchar(6) references Curso(sig_un), 
+	sig_curs	varchar(6) references Curso(sig_un),
+	data_inic	date not null,
 	data_conc	date,
 	média		float,
 	primary key (num_aluno, sig_curs)
@@ -89,7 +90,7 @@ create table ConcluiCurso(
 
 
 
-drop table ConcluiCurso;
+drop table Matricula;
 drop table Ensina;
 drop table Professor;
 drop table Secção;
