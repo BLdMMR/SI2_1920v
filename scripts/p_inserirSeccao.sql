@@ -5,7 +5,7 @@ as
 	begin transaction 
 
 	if @param_sig_dep not in (select sig_un from Departamento)
-		RAISERROR('Invalid Department', 16, 1);
+		RAISERROR('Invalid parameter: sig_dep', 16, 1);
 	
 
 	insert into Secção(sig_un, descr, sig_dep) values (@param_sig_un, @param_descr, @param_sig_dep)

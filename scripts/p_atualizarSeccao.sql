@@ -14,5 +14,5 @@ as
 	end
 	else
 	begin
-		exec dbo.p_inserirSeccao @param_sig_un, @param_descr, @param_sig_dep
+		raiserror('Invalid Parameter: Secção.sig_un', 16, 2)
 	end

@@ -26,9 +26,16 @@ create table Aluno(
 create table UC(
 	sig_un		varchar(6) primary key,
 	num_cred	int, 
-	descr		text, 
-	ano			int, 
-	semestre	int check (semestre <= 6)
+	descr		text
+);
+
+create table UCdeCurso (
+	sig_uc		varchar(6) references UC(sig_un),
+	sig_curs	varchar(6) references Curso(sig_un),
+	ano			int,
+	semestre	int check(semestre <= 6),
+	primary key (sig_uc, sig_curs)
+
 );
 
 create table Ano(
@@ -88,6 +95,7 @@ drop table Professor;
 drop table Secção;
 drop table Inscrição;
 drop table Ano;
+drop table UCdeCurso;
 drop table UC;
 drop table Aluno;
 drop table Curso;

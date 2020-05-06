@@ -3,7 +3,8 @@ as
 	begin transaction 
 
 	if @param_sig_un not in (select sig_un from Secção)
-		raiserror('Invalid parameter: sig_un', 16, 1);
+	begin
+		raiserror('Invalid parameter: Secção.sig_un', 16, 1);
 	end
 
 	delete from Secção where sig_un = @param_sig_un
