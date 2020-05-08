@@ -1,4 +1,4 @@
-create database Instituto
+--create database Instituto
 
 use Instituto
 
@@ -14,8 +14,8 @@ create table Curso(
 );
 
 create table Aluno(
-	num_aluno	int primary key,
-	num_cc		varchar(8) not null,
+	num_aluno	int IDENTITY(1, 1) primary key,
+	num_cc		varchar(8) not null unique,
 	nome		varchar(255),
 	endereço	varchar(255),
 	cod_post	varchar(8),
