@@ -45,6 +45,15 @@ create table Ano(
 	primary key (ano, semestre, sig_curs)
 );
 
+create table MatriculaAlunoEmAno(
+	ano			int,
+	semestre	int check (semestre in (1,2)),
+	sig_curs	varchar(6),
+	num_aluno	int,
+	foreign key (ano, semestre, sig_curs) references Ano(ano, semestre, sig_curs),
+	primary key (ano, semestre, sig_curs, num_aluno)
+);
+
 create table Inscrição(
 	ano			int, 
 	nota		int check (nota <= 20),
@@ -95,6 +104,7 @@ drop table Ensina;
 drop table Professor;
 drop table Secção;
 drop table Inscrição;
+drop table MatriculaAlunoEmAno
 drop table Ano;
 drop table UCdeCurso;
 drop table UC;
