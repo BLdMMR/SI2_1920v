@@ -92,4 +92,3 @@ insert into UCdeCurso values ('H1', 'VWX', 1, 1)
 insert into UCdeCurso values ('I1', 'YZA', 1, 1)
 insert into UCdeCurso values ('J1', 'YZA', 1, 1)
 
-
