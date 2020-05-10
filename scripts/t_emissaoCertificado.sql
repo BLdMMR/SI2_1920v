@@ -20,7 +20,7 @@ begin
 			if @cerd_atuais = dbo.f_totalCreditos(@curso)
 			begin
 				declare @media float = (select AVG(nota) from inscrição where num_aluno = @num_aluno)
-				update Matricula set média = @media, data_conc = GETDATE() where num_aluno = @num_aluno
+				update Matricula set média = @media, data_conc = GETDATE() where num_aluno = @num_aluno and sig_curs = @curso
 			end
 			fetch next from curs into @num_aluno
 		end
