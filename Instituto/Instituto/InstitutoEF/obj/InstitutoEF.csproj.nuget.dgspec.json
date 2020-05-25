@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\ISEL\\SI2\\6 Semestre\\SI2_1920v\\Instituto\\Instituto\\Instituto\\Instituto.csproj": {}
+    "D:\\ISEL\\SI2\\6 Semestre\\SI2_1920v\\Instituto\\Instituto\\InstitutoEF\\InstitutoEF.csproj": {}
   },
   "projects": {
-    "D:\\ISEL\\SI2\\6 Semestre\\SI2_1920v\\Instituto\\Instituto\\Instituto\\Instituto.csproj": {
+    "D:\\ISEL\\SI2\\6 Semestre\\SI2_1920v\\Instituto\\Instituto\\InstitutoEF\\InstitutoEF.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ISEL\\SI2\\6 Semestre\\SI2_1920v\\Instituto\\Instituto\\Instituto\\Instituto.csproj",
-        "projectName": "Instituto",
-        "projectPath": "D:\\ISEL\\SI2\\6 Semestre\\SI2_1920v\\Instituto\\Instituto\\Instituto\\Instituto.csproj",
+        "projectUniqueName": "D:\\ISEL\\SI2\\6 Semestre\\SI2_1920v\\Instituto\\Instituto\\InstitutoEF\\InstitutoEF.csproj",
+        "projectName": "InstitutoEF",
+        "projectPath": "D:\\ISEL\\SI2\\6 Semestre\\SI2_1920v\\Instituto\\Instituto\\InstitutoEF\\InstitutoEF.csproj",
         "packagesPath": "C:\\Users\\berna\\.nuget\\packages\\",
-        "outputPath": "D:\\ISEL\\SI2\\6 Semestre\\SI2_1920v\\Instituto\\Instituto\\Instituto\\obj\\",
+        "outputPath": "D:\\ISEL\\SI2\\6 Semestre\\SI2_1920v\\Instituto\\Instituto\\InstitutoEF\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\berna\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -38,26 +38,6 @@
       "frameworks": {
         "netcoreapp2.1": {
           "dependencies": {
-            "ADO.Net.Client": {
-              "target": "Package",
-              "version": "[1.0.6, )"
-            },
-            "ADO.Net.Client.Annotations": {
-              "target": "Package",
-              "version": "[1.1.2, )"
-            },
-            "ADO.Net.Client.Core": {
-              "target": "Package",
-              "version": "[1.0.8, )"
-            },
-            "ADO.Net.Client.Implementation": {
-              "target": "Package",
-              "version": "[1.0.7, )"
-            },
-            "EasyADO.NET": {
-              "target": "Package",
-              "version": "[1.1.1, )"
-            },
             "Microsoft.NETCore.App": {
               "suppressParent": "All",
               "target": "Package",

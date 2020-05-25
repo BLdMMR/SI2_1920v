@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 
 namespace Instituto
 {
@@ -31,6 +32,9 @@ namespace Instituto
 
         public Menu()
         {
+            SqlConnection conn = ConnectionGate.CreateConnection();
+            Console.WriteLine(ConnectionGate.TestConnection(conn));
+            /*
             Method aux = () =>
             {
                 Console.WriteLine("Press any key to continue...");
@@ -50,9 +54,11 @@ namespace Instituto
             menuOptions.Add(Options.CriarEstruturaDeCurso, CriarEstruturaDeCusro + aux);
             menuOptions.Add(Options.MatricularAlunoEmCurso, MatricularAlunoEmCurso + aux);
             menuOptions.Add(Options.InscreverAlunoEmUC, InscreverAlunoEmUC + aux);
-            menuOptions.Add(Options.AtribuirNotaDeUCaAlunoEmAno, AtribuirNotaDeUCaAlunoEmAno + aux);
+            menuOptions.Add(Options.AtribuirNotaDeUCaAlunoEmAno, AtribuirNotaDeUCaAlunoEmAno + aux);*/
             
         }
+        
+        
 
         private void AtribuirNotaDeUCaAlunoEmAno()
         {

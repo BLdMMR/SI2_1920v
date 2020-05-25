@@ -1,0 +1,10 @@
+D:\ISEL\SI2\6 Semestre\SI2_1920v\Instituto\Instituto\Instituto\bin\Debug\netcoreapp2.1\Instituto.deps.json
+D:\ISEL\SI2\6 Semestre\SI2_1920v\Instituto\Instituto\Instituto\bin\Debug\netcoreapp2.1\Instituto.runtimeconfig.json
+D:\ISEL\SI2\6 Semestre\SI2_1920v\Instituto\Instituto\Instituto\bin\Debug\netcoreapp2.1\Instituto.runtimeconfig.dev.json
+D:\ISEL\SI2\6 Semestre\SI2_1920v\Instituto\Instituto\Instituto\bin\Debug\netcoreapp2.1\Instituto.dll
+D:\ISEL\SI2\6 Semestre\SI2_1920v\Instituto\Instituto\Instituto\bin\Debug\netcoreapp2.1\Instituto.pdb
+D:\ISEL\SI2\6 Semestre\SI2_1920v\Instituto\Instituto\Instituto\obj\Debug\netcoreapp2.1\Instituto.csprojAssemblyReference.cache
+D:\ISEL\SI2\6 Semestre\SI2_1920v\Instituto\Instituto\Instituto\obj\Debug\netcoreapp2.1\Instituto.AssemblyInfoInputs.cache
+D:\ISEL\SI2\6 Semestre\SI2_1920v\Instituto\Instituto\Instituto\obj\Debug\netcoreapp2.1\Instituto.AssemblyInfo.cs
+D:\ISEL\SI2\6 Semestre\SI2_1920v\Instituto\Instituto\Instituto\obj\Debug\netcoreapp2.1\Instituto.dll
+D:\ISEL\SI2\6 Semestre\SI2_1920v\Instituto\Instituto\Instituto\obj\Debug\netcoreapp2.1\Instituto.pdb
