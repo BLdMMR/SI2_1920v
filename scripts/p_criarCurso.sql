@@ -11,6 +11,7 @@ as
 		while(@ano < @num_anos)
 		begin
 			insert into Ano(ano, semestre, sig_curs) values(@ano, @semestre, @param_sig_un)
+			set @semestre = @semestre + 1
 			if @semestre = 2 
 			begin
 				set @semestre = 1;

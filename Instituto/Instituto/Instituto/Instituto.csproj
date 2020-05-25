@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>netcoreapp2.1</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="ADO.Net.Client" Version="1.0.6" />
+      <PackageReference Include="ADO.Net.Client.Annotations" Version="1.1.2" />
+      <PackageReference Include="ADO.Net.Client.Core" Version="1.0.8" />
+      <PackageReference Include="ADO.Net.Client.Implementation" Version="1.0.7" />
+      <PackageReference Include="EasyADO.NET" Version="1.1.1" />
+    </ItemGroup>
+
+</Project>

@@ -1,0 +1,70 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "D:\\ISEL\\SI2\\6 Semestre\\Instituto\\Instituto\\Instituto\\Instituto.csproj",
+    "projectName": "Instituto",
+    "projectPath": "D:\\ISEL\\SI2\\6 Semestre\\Instituto\\Instituto\\Instituto\\Instituto.csproj",
+    "outputPath": "D:\\ISEL\\SI2\\6 Semestre\\Instituto\\Instituto\\Instituto\\obj\\",
+    "projectStyle": "PackageReference",
+    "originalTargetFrameworks": [
+      "netcoreapp2.1"
+    ],
+    "sources": {
+      "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+      "https://api.nuget.org/v3/index.json": {}
+    },
+    "frameworks": {
+      "netcoreapp2.1": {
+        "projectReferences": {}
+      }
+    },
+    "warningProperties": {
+      "warnAsError": [
+        "NU1605"
+      ]
+    }
+  },
+  "frameworks": {
+    "netcoreapp2.1": {
+      "dependencies": {
+        "ADO.Net.Client": {
+          "target": "Package",
+          "version": "[1.0.6, )"
+        },
+        "ADO.Net.Client.Annotations": {
+          "target": "Package",
+          "version": "[1.1.2, )"
+        },
+        "ADO.Net.Client.Core": {
+          "target": "Package",
+          "version": "[1.0.8, )"
+        },
+        "ADO.Net.Client.Implementation": {
+          "target": "Package",
+          "version": "[1.0.7, )"
+        },
+        "EasyADO.NET": {
+          "target": "Package",
+          "version": "[1.1.1, )"
+        },
+        "Microsoft.NETCore.App": {
+          "suppressParent": "All",
+          "target": "Package",
+          "version": "[2.1.0, )",
+          "autoReferenced": true
+        }
+      },
+      "imports": [
+        "net461",
+        "net462",
+        "net47",
+        "net471",
+        "net472",
+        "net48"
+      ],
+      "assetTargetFallback": true,
+      "warn": true,
+      "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.102\\RuntimeIdentifierGraph.json"
+    }
+  }
+}
