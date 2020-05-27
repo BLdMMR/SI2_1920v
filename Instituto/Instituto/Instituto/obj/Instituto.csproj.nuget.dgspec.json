@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\ISEL\\SI2\\6 Semestre\\SI2_1920v\\Instituto\\Instituto\\Instituto\\Instituto.csproj": {}
+    "C:\\Users\\A44784\\Documents\\ISEL\\6 Semestre\\SI2\\SI2_1920v\\Instituto\\Instituto\\Instituto\\Instituto.csproj": {}
   },
   "projects": {
-    "D:\\ISEL\\SI2\\6 Semestre\\SI2_1920v\\Instituto\\Instituto\\Instituto\\Instituto.csproj": {
+    "C:\\Users\\A44784\\Documents\\ISEL\\6 Semestre\\SI2\\SI2_1920v\\Instituto\\Instituto\\Instituto\\Instituto.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ISEL\\SI2\\6 Semestre\\SI2_1920v\\Instituto\\Instituto\\Instituto\\Instituto.csproj",
+        "projectUniqueName": "C:\\Users\\A44784\\Documents\\ISEL\\6 Semestre\\SI2\\SI2_1920v\\Instituto\\Instituto\\Instituto\\Instituto.csproj",
         "projectName": "Instituto",
-        "projectPath": "D:\\ISEL\\SI2\\6 Semestre\\SI2_1920v\\Instituto\\Instituto\\Instituto\\Instituto.csproj",
-        "packagesPath": "C:\\Users\\berna\\.nuget\\packages\\",
-        "outputPath": "D:\\ISEL\\SI2\\6 Semestre\\SI2_1920v\\Instituto\\Instituto\\Instituto\\obj\\",
+        "projectPath": "C:\\Users\\A44784\\Documents\\ISEL\\6 Semestre\\SI2\\SI2_1920v\\Instituto\\Instituto\\Instituto\\Instituto.csproj",
+        "packagesPath": "C:\\Users\\A44784\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\A44784\\Documents\\ISEL\\6 Semestre\\SI2\\SI2_1920v\\Instituto\\Instituto\\Instituto\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\berna\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\A44784\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

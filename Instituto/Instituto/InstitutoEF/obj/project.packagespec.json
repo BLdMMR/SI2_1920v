@@ -1,11 +1,14 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "D:\\ISEL\\SI2\\6 Semestre\\SI2_1920v\\Instituto\\Instituto\\InstitutoEF\\InstitutoEF.csproj",
+    "projectUniqueName": "C:\\Users\\A44784\\Documents\\ISEL\\6 Semestre\\SI2\\SI2_1920v\\Instituto\\Instituto\\InstitutoEF\\InstitutoEF.csproj",
     "projectName": "InstitutoEF",
-    "projectPath": "D:\\ISEL\\SI2\\6 Semestre\\SI2_1920v\\Instituto\\Instituto\\InstitutoEF\\InstitutoEF.csproj",
-    "outputPath": "D:\\ISEL\\SI2\\6 Semestre\\SI2_1920v\\Instituto\\Instituto\\InstitutoEF\\obj\\",
+    "projectPath": "C:\\Users\\A44784\\Documents\\ISEL\\6 Semestre\\SI2\\SI2_1920v\\Instituto\\Instituto\\InstitutoEF\\InstitutoEF.csproj",
+    "outputPath": "C:\\Users\\A44784\\Documents\\ISEL\\6 Semestre\\SI2\\SI2_1920v\\Instituto\\Instituto\\InstitutoEF\\obj\\",
     "projectStyle": "PackageReference",
+    "fallbackFolders": [
+      "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+    ],
     "originalTargetFrameworks": [
       "netcoreapp2.1"
     ],

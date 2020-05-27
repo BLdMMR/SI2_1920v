@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 
 namespace Instituto
@@ -32,8 +33,8 @@ namespace Instituto
 
         public Menu()
         {
-            SqlConnection conn = ConnectionGate.CreateConnection();
-            Console.WriteLine(ConnectionGate.TestConnection(conn));
+            ConnectionGate.SetConnection();
+            Console.WriteLine(ConnectionGate.TestConnection());
             /*
             Method aux = () =>
             {
@@ -132,7 +133,33 @@ namespace Instituto
 
         private void InserirDepartamento()
         {
-            throw new NotImplementedException();
+            /***
+             * Lê valores a inserir
+             ***/ 
+            string command = "p_inserirDepartemento";
+            Console.WriteLine("Inserir SIGLA UNICA do departamento:\n");
+            string sig_un = Console.ReadLine();
+            Console.WriteLine("Inserir DESCRIÇÃO do departamento:\n");
+            string descr = Console.ReadLine();
+            
+            /***
+             * Cria Parâmetros para passar no procedimento armazenado
+             ***/
+            SqlParameter[] parameters = new SqlParameter[2];
+            parameters[0] = new SqlParameter("@param_sig_un", sig_un);
+            parameters[1] = new SqlParameter("@param_descr", descr);
+            
+            /***
+             * Executa o procedimento armazenado
+             ***/
+            int ret = ConnectionGate.ExecuteStoredProcedure(command, parameters);
+            
+            /***
+             * Vê op valor de retorno e age de acordo
+             ***/
+            if (ret != -1) Console.WriteLine("Departamento inserido");
+            else Console.WriteLine("ATENÇÂO: Departamento NÂO inserido");
+            
         }
     }
 }
