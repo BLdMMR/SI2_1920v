@@ -4,4 +4,4 @@
 A fase um consiste em criar uma série de funcionalidades num modelo físico
 
 ### Fase 2
-A fase dois consiste em implementar algumas das funcionalidades anteriormente referidas em ADO.NET e numa segunda etapa em __Entity Framework__
+A fase dois consiste em implementar algumas das funcionalidades anteriormente referidas em ADO.NET e numa segunda etapa em ___Entity Framework___
