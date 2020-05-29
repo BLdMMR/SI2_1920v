@@ -96,8 +96,12 @@ namespace Instituto
                 return false;
             }
             
-            }
+        }
 
+        public static SqlCommand GetCommand()
+        {
+            return command;
+        }
         public static int ExecuteStoredProcedure(string commandText, SqlParameter[] parameters)
         {
             int ret = 0;
