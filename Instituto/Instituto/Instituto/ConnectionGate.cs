@@ -11,7 +11,9 @@ namespace Instituto
         
         public static SqlCommand SetConnection()
         {
-            SqlConnection conn = new SqlConnection("data source=DESKTOP-DCAMG6R\\MSSQLSERVER01;initial catalog=Instituto;trusted_connection=true");
+            string Bernardo =
+                "data source=DESKTOP-DCAMG6R\\MSSQLSERVER01;initial catalog=Instituto;trusted_connection=true";
+            SqlConnection conn = new SqlConnection(Bernardo);
             command.Connection = conn;
             return command;
         }

@@ -30,11 +30,11 @@ create table UC(
 );
 
 create table UCdeCurso (
-	sig_uc		varchar(6) references UC(sig_un),
+	sig_un		varchar(6) references UC(sig_un),
 	sig_curs	varchar(6) references Curso(sig_un),
 	ano			int,
 	semestre	int check(semestre <= 6),
-	primary key (sig_uc, sig_curs)
+	primary key (sig_un, sig_curs)
 
 );
 
