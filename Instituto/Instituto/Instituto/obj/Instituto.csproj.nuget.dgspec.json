@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ricardobogas\\Desktop\\Si2\\Trabalho\\SI2_1920v\\Instituto\\Instituto\\Instituto\\Instituto.csproj": {}
+    "C:\\Users\\A44784\\Documents\\ISEL\\6 Semestre\\SI2\\SI2_1920v\\Instituto\\Instituto\\Instituto\\Instituto.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ricardobogas\\Desktop\\Si2\\Trabalho\\SI2_1920v\\Instituto\\Instituto\\Instituto\\Instituto.csproj": {
+    "C:\\Users\\A44784\\Documents\\ISEL\\6 Semestre\\SI2\\SI2_1920v\\Instituto\\Instituto\\Instituto\\Instituto.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ricardobogas\\Desktop\\Si2\\Trabalho\\SI2_1920v\\Instituto\\Instituto\\Instituto\\Instituto.csproj",
+        "projectUniqueName": "C:\\Users\\A44784\\Documents\\ISEL\\6 Semestre\\SI2\\SI2_1920v\\Instituto\\Instituto\\Instituto\\Instituto.csproj",
         "projectName": "Instituto",
-        "projectPath": "C:\\Users\\ricardobogas\\Desktop\\Si2\\Trabalho\\SI2_1920v\\Instituto\\Instituto\\Instituto\\Instituto.csproj",
-        "packagesPath": "C:\\Users\\ricardobogas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ricardobogas\\Desktop\\Si2\\Trabalho\\SI2_1920v\\Instituto\\Instituto\\Instituto\\obj\\",
+        "projectPath": "C:\\Users\\A44784\\Documents\\ISEL\\6 Semestre\\SI2\\SI2_1920v\\Instituto\\Instituto\\Instituto\\Instituto.csproj",
+        "packagesPath": "C:\\Users\\A44784\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\A44784\\Documents\\ISEL\\6 Semestre\\SI2\\SI2_1920v\\Instituto\\Instituto\\Instituto\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\ricardobogas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\A44784\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -69,10 +69,16 @@
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.102\\RuntimeIdentifierGraph.json"
         }
       }
     }
