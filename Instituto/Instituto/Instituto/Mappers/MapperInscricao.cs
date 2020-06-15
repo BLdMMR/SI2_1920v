@@ -56,17 +56,36 @@ namespace Instituto.Mappers
             Inscricao currInscricao = new Inscricao();
             using (var ts = new TransactionScope(TransactionScopeOption.Required))
             {
-                SqlCommand cmd = new SqlCommand();
-                cmd.CommandText = "SELECT * FROM Inscrição WHERE ano = @ano AND num_aluno = @num_aluno AND sig_uc = @sig_uc";
+                SqlCommand cmd = ConnectionGate.GetCommand();
+                cmd.CommandText = "SELECT * FROM Inscrição";//" WHERE ano = @ano AND num_aluno = @num_aluno AND sig_uc = @sig_uc";
+                if (parameteres.Length > 2)
+                {
+                    bool first = true;
+                    cmd.CommandText = cmd.CommandText + " WHERE ";
+                    for (int i = 0; i < parameteres.Length; i+=2)
+                    {
+                        if (!first)
+                        {
+                            cmd.CommandText = cmd.CommandText + " AND ";
+                        }
+                        cmd.CommandText = cmd.CommandText + parameteres[i] + "= @" + parameteres[i];
+                        first = false;
+                    }
+                }
 
-                SqlParameter anoQuery = new SqlParameter();
+                for (int i = 0; i < parameteres.Length; i += 2)
+                {
+                    cmd.Parameters.Add(new SqlParameter("@" + parameteres[i], parameteres[i + 1]));
+                }
+                
+                /*SqlParameter anoQuery = new SqlParameter();
                 SqlParameter numAlunoQuery = new SqlParameter();
                 SqlParameter sigUcQuery = new SqlParameter();
-                    
+                
                 cmd.Parameters.Add(anoQuery);
                 cmd.Parameters.Add(numAlunoQuery);
                 cmd.Parameters.Add(sigUcQuery);
-
+                
                 anoQuery.ParameterName = "@ano";
                 anoQuery.SqlDbType = SqlDbType.Int;
                 numAlunoQuery.ParameterName = "@num_aluno";
@@ -77,7 +96,7 @@ namespace Instituto.Mappers
                 anoQuery.Value = parameteres[0];
                 numAlunoQuery.Value = parameteres[1];
                 sigUcQuery.Value = parameteres[2];
-
+                */
                 using (var cn = ConnectionGate.SetConnection())
                 {
                     ConnectionGate.OpenConnection();

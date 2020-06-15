@@ -4,6 +4,8 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using ADO.Net.Client.Annotations;
+using Instituto.Entities;
+using Instituto.Mappers;
 
 namespace Instituto
 {
@@ -12,6 +14,7 @@ namespace Instituto
         private enum Options
         {
             Invalid = -1,
+            Exit,    
             InserirDepartamento,
             RemoverDepartamento,
             AtualizarDepartamento,
@@ -27,8 +30,9 @@ namespace Instituto
             MatricularAlunoEmCurso,
             InscreverAlunoEmUC,
             AtribuirNotaDeUCaAlunoEmAno,
-            Unknown,
-            Exit
+            ListarInscEmUCEmDetAno,
+            Unknown
+            
         }
 
         private delegate void Method();
@@ -40,7 +44,7 @@ namespace Instituto
         public Menu()
         {
             ConnectionGate.SetConnection();
-            Console.WriteLine(ConnectionGate.TestConnection());
+            //Console.WriteLine(ConnectionGate.TestConnection());
             
             Method aux = () =>
             {
@@ -48,6 +52,7 @@ namespace Instituto
                 Console.ReadKey();
             };
             menuOptions = new Dictionary<Options, Method>();
+            menuOptions.Add(Options.Exit, () => {});
             menuOptions.Add(Options.InserirDepartamento, InserirDepartamento + aux);
             menuOptions.Add(Options.RemoverDepartamento, RemoverDepartamento + aux);        
             menuOptions.Add(Options.AtualizarDepartamento, AtualizarDepartamento + aux);
@@ -63,7 +68,8 @@ namespace Instituto
             menuOptions.Add(Options.MatricularAlunoEmCurso, MatricularAlunoEmCurso + aux);
             menuOptions.Add(Options.InscreverAlunoEmUC, InscreverAlunoEmUC + aux);
             menuOptions.Add(Options.AtribuirNotaDeUCaAlunoEmAno, AtribuirNotaDeUCaAlunoEmAno + aux);
-            menuOptions.Add(Options.Exit, null);
+            menuOptions.Add(Options.ListarInscEmUCEmDetAno, ListarInscEmUCEmDetAno + aux );
+            //menuOptions.Add(Options.Exit, null);
             
             ops = menuOptions.Keys.ToArray();
 
@@ -100,7 +106,7 @@ namespace Instituto
                 Console.ReadKey();
             }
         }
-        
+
         private Options DisplayMenu()
         {
             Options op = Options.Unknown;
@@ -108,7 +114,7 @@ namespace Instituto
             try
             {
                 Console.WriteLine("MENU INSTITUTO DB");
-                for (int i = 0; i < ops.Length; i++)
+                for (int i = 1; i < ops.Length; i++)
                 {
                     Console.WriteLine(i + ": " + ops.GetValue(i).ToString());
                 }
@@ -126,8 +132,24 @@ namespace Instituto
 
             return op;
         }
-        
-        
+
+        private void ListarInscEmUCEmDetAno()
+        {
+            Inscricao insc = new Inscricao();
+            insc.Ano = Int32.Parse(Console.ReadLine());
+            insc.Sig_UC = Console.ReadLine();
+
+            object[] parameters = {"ano", insc.Ano, "sig_uc", insc.Sig_UC};            
+            MapperInscricao map = new MapperInscricao();
+            
+            IEnumerable<Inscricao> ret = map.Read(parameters);
+
+            foreach (var VARIABLE in ret)
+            {
+                Console.WriteLine(VARIABLE.Num_Aluno);
+            }
+
+        }
 
         private void AtribuirNotaDeUCaAlunoEmAno()
         {
