@@ -11,6 +11,7 @@
       <PackageReference Include="ADO.Net.Client.Core" Version="1.0.8" />
       <PackageReference Include="ADO.Net.Client.Implementation" Version="1.0.7" />
       <PackageReference Include="EasyADO.NET" Version="1.1.1" />
+      <PackageReference Include="EntityFramework" Version="6.4.4" />
     </ItemGroup>
 
 </Project>

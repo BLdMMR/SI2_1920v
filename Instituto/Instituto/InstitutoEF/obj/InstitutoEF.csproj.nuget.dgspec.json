@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\A44784\\Documents\\ISEL\\6 Semestre\\SI2\\SI2_1920v\\Instituto\\Instituto\\InstitutoEF\\InstitutoEF.csproj": {}
+    "D:\\ISEL\\SI2\\6 Semestre\\SI2_1920v\\Instituto\\Instituto\\InstitutoEF\\InstitutoEF.csproj": {}
   },
   "projects": {
-    "C:\\Users\\A44784\\Documents\\ISEL\\6 Semestre\\SI2\\SI2_1920v\\Instituto\\Instituto\\InstitutoEF\\InstitutoEF.csproj": {
+    "D:\\ISEL\\SI2\\6 Semestre\\SI2_1920v\\Instituto\\Instituto\\InstitutoEF\\InstitutoEF.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\A44784\\Documents\\ISEL\\6 Semestre\\SI2\\SI2_1920v\\Instituto\\Instituto\\InstitutoEF\\InstitutoEF.csproj",
+        "projectUniqueName": "D:\\ISEL\\SI2\\6 Semestre\\SI2_1920v\\Instituto\\Instituto\\InstitutoEF\\InstitutoEF.csproj",
         "projectName": "InstitutoEF",
-        "projectPath": "C:\\Users\\A44784\\Documents\\ISEL\\6 Semestre\\SI2\\SI2_1920v\\Instituto\\Instituto\\InstitutoEF\\InstitutoEF.csproj",
-        "packagesPath": "C:\\Users\\A44784\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\A44784\\Documents\\ISEL\\6 Semestre\\SI2\\SI2_1920v\\Instituto\\Instituto\\InstitutoEF\\obj\\",
+        "projectPath": "D:\\ISEL\\SI2\\6 Semestre\\SI2_1920v\\Instituto\\Instituto\\InstitutoEF\\InstitutoEF.csproj",
+        "packagesPath": "C:\\Users\\berna\\.nuget\\packages\\",
+        "outputPath": "D:\\ISEL\\SI2\\6 Semestre\\SI2_1920v\\Instituto\\Instituto\\InstitutoEF\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\A44784\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\berna\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -41,11 +38,19 @@
       "frameworks": {
         "netcoreapp2.1": {
           "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
             "Microsoft.NETCore.App": {
               "suppressParent": "All",
               "target": "Package",
               "version": "[2.1.0, )",
               "autoReferenced": true
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.6.1, )"
             }
           },
           "imports": [

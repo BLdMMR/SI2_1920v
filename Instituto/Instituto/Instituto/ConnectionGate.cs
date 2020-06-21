@@ -13,7 +13,9 @@ namespace Instituto
         {
             string Bernardo =
                 "data source=DESKTOP-DCAMG6R\\MSSQLSERVER01;initial catalog=Instituto;trusted_connection=true";
-            SqlConnection conn = new SqlConnection(Bernardo);
+            string BernardoDesktop = 
+                "data source=DESKTOP-M1V057N;initial catalog=Instituto;trusted_connection=true";
+            SqlConnection conn = new SqlConnection(BernardoDesktop);
             command.Connection = conn;
             return command;
         }

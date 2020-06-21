@@ -7,7 +7,7 @@ using Instituto.Entities;
 
 namespace Instituto.Mappers
 {
-    public class MapperMatricula : IMapper<Matricula, object[]>
+    public class MapperMatricula : IMapper<Matricula, object []>
     {
         public void Create(Matricula entity)
         {
@@ -55,7 +55,7 @@ namespace Instituto.Mappers
             }
         }
 
-        public IEnumerable<Matricula> Read(object[] parameteres)
+        public IEnumerable<Matricula> Read(object [] parameteres)
         {
             List<Matricula> matriculas = new List<Matricula>();
             Matricula currMatricula = new Matricula();
@@ -161,7 +161,8 @@ namespace Instituto.Mappers
             }
         }
 
-        public void Delete(object[] parameters)
+
+        public void Delete(Matricula matricula)
         {
             using (var ts = new TransactionScope(TransactionScopeOption.Required))
             {
@@ -180,8 +181,8 @@ namespace Instituto.Mappers
                 sigCursParam.ParameterName = "@sig_curs";
                 sigCursParam.SqlDbType = SqlDbType.VarChar;
 
-                numAlunoParam.Value = entity.Num_Aluno;
-                sigCursParam.Value = entity.Sig_Curs;
+                numAlunoParam.Value = matricula.Num_Aluno;
+                sigCursParam.Value = matricula.Sig_Curs;
 
                 using (var cn = ConnectionGate.SetConnection())
                 {

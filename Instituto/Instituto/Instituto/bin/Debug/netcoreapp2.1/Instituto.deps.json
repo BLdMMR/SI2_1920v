@@ -12,7 +12,8 @@
           "ADO.Net.Client.Annotations": "1.1.2",
           "ADO.Net.Client.Core": "1.0.8",
           "ADO.Net.Client.Implementation": "1.0.7",
-          "EasyADO.NET": "1.1.1"
+          "EasyADO.NET": "1.1.1",
+          "EntityFramework": "6.4.4"
         },
         "runtime": {
           "Instituto.dll": {}
@@ -71,6 +72,7 @@
           }
         }
       },
+      "EntityFramework/6.4.4": {},
       "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
         "runtime": {
           "lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll": {
@@ -222,6 +224,13 @@
       "sha512": "sha512-j+XskltQKfBSXLtHb7iz1bXVS3ZOPtERYO3EtZ7PMjSl2z0YRmhqePVk6MhybFwnkcRKE5dhrCASiGJwxFb9bA==",
       "path": "easyado.net/1.1.1",
       "hashPath": "easyado.net.1.1.1.nupkg.sha512"
+    },
+    "EntityFramework/6.4.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-yj1+/4tci7Panu3jKDHYizxwVm0Jvm7b7m057b5h4u8NUHGCR8WIWirBTw+8EptRffwftIWPBeIRGNKD1ewEMQ==",
+      "path": "entityframework/6.4.4",
+      "hashPath": "entityframework.6.4.4.nupkg.sha512"
     },
     "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
       "type": "package",

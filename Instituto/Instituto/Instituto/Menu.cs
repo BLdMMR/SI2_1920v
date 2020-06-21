@@ -178,8 +178,11 @@ namespace Instituto
          Console.WriteLine("Inserir NÚMERO DE ALUNO a remover");
          aluno.Num_Aluno = Int32.Parse(Console.ReadLine());
          object[] parameters = {"num_aluno", aluno.Num_Aluno};
+         Matricula matricula = new Matricula();
+         matricula.Num_Aluno = aluno.Num_Aluno;
          MapperMatricula mapperMatricula = new MapperMatricula();
-         mapperMatricula.Delete(parameters);
+         mapperMatricula.Delete(matricula);
+         
          
 
         }
