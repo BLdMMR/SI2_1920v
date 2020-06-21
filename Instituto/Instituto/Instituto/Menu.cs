@@ -174,14 +174,14 @@ namespace Instituto
 
         private void EliminarAlunoETodaAInfo()
         {
-         Aluno aluno = new Aluno();
-         Console.WriteLine("Inserir NÚMERO DE ALUNO a remover");
-         aluno.Num_Aluno = Int32.Parse(Console.ReadLine());
-         object[] parameters = {"num_aluno", aluno.Num_Aluno};
-         Matricula matricula = new Matricula();
-         matricula.Num_Aluno = aluno.Num_Aluno;
-         MapperMatricula mapperMatricula = new MapperMatricula();
-         mapperMatricula.Delete(matricula);
+             Aluno aluno = new Aluno();
+             Console.WriteLine("Inserir NÚMERO DE ALUNO a remover");
+             aluno.Num_Aluno = Int32.Parse(Console.ReadLine());
+             object[] parameters = {"num_aluno", aluno.Num_Aluno};
+             Matricula matricula = new Matricula();
+             matricula.Num_Aluno = aluno.Num_Aluno;
+             MapperMatricula mapperMatricula = new MapperMatricula();
+             mapperMatricula.Delete(matricula);
          
          
 
@@ -255,7 +255,7 @@ namespace Instituto
 
         private void MatricularAlunoEmCurso()
         {
-            string command = "p_criarCurso";
+            string command = "p_matricularAlunoEmCurso";
             Console.WriteLine("Inserir NÚMERO DO CARTÃO DE CIDADÃO do Aluno");
             string num_cc = Console.ReadLine();
             Console.WriteLine("Inserir NOME do Aluno");
@@ -263,7 +263,7 @@ namespace Instituto
             Console.WriteLine("Inserir ENDEREÇO do Aluno");
             string endereco = Console.ReadLine();
             Console.WriteLine("Inserir CÓDIGO POSTAL do Aluno");
-            int cod_post = Int32.Parse(Console.ReadLine());
+            string cod_post = Console.ReadLine();
             Console.WriteLine("Inserir LOCALIDADE do Aluno");
             string localidade = Console.ReadLine(); 
             Console.WriteLine("Inserir DATA DE NASCIMENTO do Aluno");

@@ -4,32 +4,15 @@
     <list default="true" id="997a2863-bf54-4b39-a963-6f2c554f80fc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Instituto/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Instituto/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Instituto/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Instituto/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Instituto/ConnectionGate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Instituto/ConnectionGate.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Instituto/Instituto.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Instituto/Instituto.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Instituto/Mappers/MapperMatricula.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Instituto/Mappers/MapperMatricula.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Instituto/Menu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Instituto/Menu.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Instituto/bin/Debug/netcoreapp2.1/Instituto.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/Instituto/bin/Debug/netcoreapp2.1/Instituto.deps.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Instituto/bin/Debug/netcoreapp2.1/Instituto.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Instituto/bin/Debug/netcoreapp2.1/Instituto.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Instituto/bin/Debug/netcoreapp2.1/Instituto.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Instituto/bin/Debug/netcoreapp2.1/Instituto.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Instituto/bin/Debug/netcoreapp2.1/Instituto.runtimeconfig.dev.json" beforeDir="false" afterPath="$PROJECT_DIR$/Instituto/bin/Debug/netcoreapp2.1/Instituto.runtimeconfig.dev.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Instituto/obj/Debug/netcoreapp2.1/Instituto.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Instituto/obj/Debug/netcoreapp2.1/Instituto.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Instituto/obj/Debug/netcoreapp2.1/Instituto.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Instituto/obj/Debug/netcoreapp2.1/Instituto.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Instituto/obj/Debug/netcoreapp2.1/Instituto.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Instituto/obj/Debug/netcoreapp2.1/Instituto.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Instituto/obj/Debug/netcoreapp2.1/Instituto.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Instituto/obj/Debug/netcoreapp2.1/Instituto.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Instituto/obj/Instituto.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Instituto/obj/Instituto.csproj.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Instituto/obj/Instituto.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Instituto/obj/Instituto.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Instituto/obj/Instituto.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Instituto/obj/Instituto.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Instituto/obj/Instituto.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/Instituto/obj/Instituto.csproj.nuget.g.targets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Instituto/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Instituto/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Instituto/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Instituto/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InstitutoEF/Entities.cs" beforeDir="false" afterPath="$PROJECT_DIR$/InstitutoEF/Entities.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InstitutoEF/InstitutoEF.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/InstitutoEF/InstitutoEF.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InstitutoEF/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/InstitutoEF/Launcher.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InstitutoEF/Menu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/InstitutoEF/Menu.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InstitutoEF/obj/Debug/netcoreapp2.1/InstitutoEF.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/InstitutoEF/obj/Debug/netcoreapp2.1/InstitutoEF.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InstitutoEF/obj/Debug/netcoreapp2.1/InstitutoEF.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/InstitutoEF/obj/Debug/netcoreapp2.1/InstitutoEF.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InstitutoEF/obj/InstitutoEF.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/InstitutoEF/obj/InstitutoEF.csproj.nuget.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InstitutoEF/obj/InstitutoEF.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/InstitutoEF/obj/InstitutoEF.csproj.nuget.dgspec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InstitutoEF/obj/InstitutoEF.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/InstitutoEF/obj/InstitutoEF.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InstitutoEF/obj/InstitutoEF.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/InstitutoEF/obj/InstitutoEF.csproj.nuget.g.targets" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InstitutoEF/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/InstitutoEF/obj/project.assets.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InstitutoEF/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/InstitutoEF/obj/project.packagespec.json" afterDir="false" />
     </list>
@@ -52,6 +35,7 @@
     <setting file="file://$PROJECT_DIR$/Instituto/Mappers/MapperCurso.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Instituto/Menu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Instituto/Mappers/MapperAno.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/InstitutoEF/Entities/f_listaInsc_Result.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Instituto/Entities/MatriculaAlunoEmAno.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Instituto/Entities/Matricula.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Instituto/Entities/Inscricao.cs" root0="FORCE_HIGHLIGHTING" />
@@ -62,7 +46,10 @@
     <setting file="file://$PROJECT_DIR$/InstitutoEF/Menu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/InstitutoEF/Entities/Aluno.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Instituto/obj/Debug/netcoreapp2.1/Instituto.AssemblyInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/InstitutoEF/Entities/Ano.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Instituto/ConnectionGate.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/InstitutoEF/Entities/Curso.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Instituto/Entities/Aluno.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Instituto/Mappers/MapperEnsina.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Instituto/Mappers/MapperAluno.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Instituto/Mappers/MapperDepartamento.cs" root0="FORCE_HIGHLIGHTING" />
@@ -87,12 +74,13 @@
         <option value="$PROJECT_DIR$/Instituto/Mappers/MapperInscricao.cs" />
         <option value="$PROJECT_DIR$/Instituto/Launcher.cs" />
         <option value="$PROJECT_DIR$/Instituto/Mappers/MapperMatricula.cs" />
-        <option value="$PROJECT_DIR$/Instituto/Menu.cs" />
         <option value="$PROJECT_DIR$/Instituto/ConnectionGate.cs" />
         <option value="$PROJECT_DIR$/InstitutoEF/Program.cs" />
         <option value="$PROJECT_DIR$/InstitutoEF/Launcher.cs" />
-        <option value="$PROJECT_DIR$/InstitutoEF/Menu.cs" />
+        <option value="$PROJECT_DIR$/InstitutoEF/Entities/f_listaInsc_Result.cs" />
+        <option value="$PROJECT_DIR$/Instituto/Menu.cs" />
         <option value="$PROJECT_DIR$/InstitutoEF/Entities.cs" />
+        <option value="$PROJECT_DIR$/InstitutoEF/Menu.cs" />
       </list>
     </option>
   </component>
@@ -110,7 +98,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected=".NET Project.InstitutoEF">
     <configuration name="Instituto" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -129,6 +117,29 @@
         <option name="Build" enabled="true" />
       </method>
     </configuration>
+    <configuration name="InstitutoEF" type="DotNetProject" factoryName=".NET Project" temporary="true">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/InstitutoEF/InstitutoEF.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value=".NETCoreApp,Version=v2.1" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue=".NET Project.InstitutoEF" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -145,7 +156,7 @@
       <workItem from="1590949353697" duration="3107000" />
       <workItem from="1592322053468" duration="908000" />
       <workItem from="1592323075039" duration="2555000" />
-      <workItem from="1592760337278" duration="5783000" />
+      <workItem from="1592760337278" duration="13592000" />
     </task>
     <servers />
   </component>
@@ -172,26 +183,26 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="223" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1592210890740" />
-    <state width="916" height="284" key="GridCell.Tab.0.bottom" timestamp="1592765017444">
+    <state width="916" height="284" key="GridCell.Tab.0.bottom" timestamp="1592774536629">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1492" height="242" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1592322961649" />
-    <state width="916" height="284" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1592765017444" />
-    <state width="916" height="284" key="GridCell.Tab.0.center" timestamp="1592765017444">
+    <state width="916" height="284" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1592774536629" />
+    <state width="916" height="284" key="GridCell.Tab.0.center" timestamp="1592774536629">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1492" height="242" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1592322961649" />
-    <state width="916" height="284" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1592765017444" />
-    <state width="916" height="284" key="GridCell.Tab.0.left" timestamp="1592765017444">
+    <state width="916" height="284" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1592774536629" />
+    <state width="916" height="284" key="GridCell.Tab.0.left" timestamp="1592774536629">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1492" height="242" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1592322961649" />
-    <state width="916" height="284" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1592765017444" />
-    <state width="916" height="284" key="GridCell.Tab.0.right" timestamp="1592765017444">
+    <state width="916" height="284" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1592774536629" />
+    <state width="916" height="284" key="GridCell.Tab.0.right" timestamp="1592774536629">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1492" height="242" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1592322961649" />
-    <state width="916" height="284" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1592765017444" />
+    <state width="916" height="284" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1592774536629" />
     <state width="1492" height="277" key="GridCell.Tab.1.bottom" timestamp="1592321725463">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -300,6 +311,19 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Instituto/Menu.cs</url>
+          <line>180</line>
+          <properties documentPath="$PROJECT_DIR$/Instituto/Menu.cs" initialLine="180">
+            <startOffsets>
+              <option value="7517" />
+            </startOffsets>
+            <endOffsets>
+              <option value="7555" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

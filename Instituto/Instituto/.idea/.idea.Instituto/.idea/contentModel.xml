@@ -56,6 +56,7 @@
           <e p="Curso.cs" t="Include" />
           <e p="Departamento.cs" t="Include" />
           <e p="Ensina.cs" t="Include" />
+          <e p="f_listaInsc_Result.cs" t="Include" />
           <e p="Inscricao.cs" t="Include" />
           <e p="Matricula.cs" t="Include" />
           <e p="MatriculaAlunoEmAno.cs" t="Include" />
