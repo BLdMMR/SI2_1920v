@@ -161,7 +161,7 @@ namespace Instituto.Mappers
             }
         }
 
-        public void Delete(Matricula entity)
+        public void Delete(object[] parameters)
         {
             using (var ts = new TransactionScope(TransactionScopeOption.Required))
             {

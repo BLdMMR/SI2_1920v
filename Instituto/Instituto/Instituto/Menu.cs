@@ -31,9 +31,12 @@ namespace Instituto
             InscreverAlunoEmUC,
             AtribuirNotaDeUCaAlunoEmAno,
             ListarInscEmUCEmDetAno,
+            EliminarAlunoETodaAInfo,
             Unknown
             
         }
+        private Dictionary<Options, String> optionNames = new Dictionary<Options, string>();
+         
 
         private delegate void Method();
 
@@ -69,7 +72,25 @@ namespace Instituto
             menuOptions.Add(Options.InscreverAlunoEmUC, InscreverAlunoEmUC + aux);
             menuOptions.Add(Options.AtribuirNotaDeUCaAlunoEmAno, AtribuirNotaDeUCaAlunoEmAno + aux);
             menuOptions.Add(Options.ListarInscEmUCEmDetAno, ListarInscEmUCEmDetAno + aux );
+            menuOptions.Add(Options.EliminarAlunoETodaAInfo, EliminarAlunoETodaAInfo + aux);
             //menuOptions.Add(Options.Exit, null);
+            optionNames.Add(Options.Exit, "Exit");
+            optionNames.Add(Options.InserirDepartamento, "Inserir Departamento");
+            optionNames.Add(Options.RemoverDepartamento, "Remover Departamento");
+            optionNames.Add(Options.AtualizarDepartamento, "Atualizar Departamento");
+            optionNames.Add(Options.InserirSeccao, "Inserir Secção");
+            optionNames.Add(Options.RemoverSeccao, "Remover Secção");
+            optionNames.Add(Options.AtualizarSeccao, "Atualizar Secção");
+            optionNames.Add(Options.InserirUC, "Inserir Unidade Curricular");
+            optionNames.Add(Options.RemoverUC, "Remover Unidade Curricular");
+            optionNames.Add(Options.AtualizarUC, "Atualizar Unidade Curricular");
+            optionNames.Add(Options.InserirUCEmCurso, "Inserir Unidade Curricular num Curso");
+            optionNames.Add(Options.RemoverUCDeCurso, "Remover Unidade Curricular de um Curso");
+            optionNames.Add(Options.CriarEstruturaDeCurso, "Criar estrutura geral de um Curso");
+            optionNames.Add(Options.MatricularAlunoEmCurso, "Matricular um Aluno num Curso");
+            optionNames.Add(Options.InscreverAlunoEmUC, "Inscrever um Aluno numa Unidade Curricular");
+            optionNames.Add(Options.AtribuirNotaDeUCaAlunoEmAno, "Atribuir nota de uma Unidade Curricular a um Aluno");
+            optionNames.Add(Options.ListarInscEmUCEmDetAno, "Listar Inscrições numa Unidade Curricular no Ano Corrente");
             
             ops = menuOptions.Keys.ToArray();
 
@@ -95,7 +116,12 @@ namespace Instituto
                     }
                     catch (KeyNotFoundException e)
                     {
-                        Console.WriteLine("Option unknown: "+ e.Message +" \n\nPress any key to try again");
+                        Console.WriteLine("Option unknown: " + e.Message + " \n\nPress any key to try again");
+                        Console.ReadKey();
+                    }
+                    catch (NotImplementedException ex)
+                    {
+                        Console.WriteLine("Currently unavailable... Sorry... :\\ \n\nPress any key to continue...");
                         Console.ReadKey();
                     }
                 }
@@ -114,9 +140,22 @@ namespace Instituto
             try
             {
                 Console.WriteLine("MENU INSTITUTO DB");
-                for (int i = 1; i < ops.Length; i++)
+                // for (int i = 1; i < ops.Length; i++)
+                // {
+                //     Console.WriteLine(i + ": " + ops.GetValue(i).ToString());
+                // }
+
+                bool first = true;
+                int j = 0;
+                foreach (var optionName in optionNames)
                 {
-                    Console.WriteLine(i + ": " + ops.GetValue(i).ToString());
+                    if (first)
+                    {
+                        first = false;
+                        continue;
+                    }
+                    ++j;
+                    Console.WriteLine(j + ": " + optionName.Value);
                 }
 
                 Console.WriteLine("0: Exit");
@@ -133,10 +172,23 @@ namespace Instituto
             return op;
         }
 
+        private void EliminarAlunoETodaAInfo()
+        {
+         Aluno aluno = new Aluno();
+         Console.WriteLine("Inserir NÚMERO DE ALUNO a remover");
+         aluno.Num_Aluno = Int32.Parse(Console.ReadLine());
+         object[] parameters = {"num_aluno", aluno.Num_Aluno};
+         MapperMatricula mapperMatricula = new MapperMatricula();
+         mapperMatricula.Delete(parameters);
+         
+
+        }
+
         private void ListarInscEmUCEmDetAno()
         {
             Inscricao insc = new Inscricao();
-            insc.Ano = Int32.Parse(Console.ReadLine());
+            insc.Ano = 2020;
+            Console.WriteLine("Inserir SIGLA ÚNICA da Unidade Curricular");
             insc.Sig_UC = Console.ReadLine();
 
             object[] parameters = {"ano", insc.Ano, "sig_uc", insc.Sig_UC};            
@@ -144,9 +196,9 @@ namespace Instituto
             
             IEnumerable<Inscricao> ret = map.Read(parameters);
 
-            foreach (var VARIABLE in ret)
+            foreach (var param in ret)
             {
-                Console.WriteLine(VARIABLE.Num_Aluno);
+                Console.WriteLine(param.Num_Aluno);
             }
 
         }
@@ -155,13 +207,13 @@ namespace Instituto
         {
             string command = "p_atribuirNotaAAlunoEmUC";
             Console.WriteLine("Inserir NÚMERO DE ALUNO");
-            int num_aluno = Console.Read();
+            int num_aluno = Int32.Parse(Console.ReadLine());
             Console.WriteLine("Inserir SIGLA ÚNICA da Unidade Curricular");
             string sig_uc = Console.ReadLine(); 
             Console.WriteLine("Inserir ANO de Inscrição");
-            int ano_insc = Console.Read();
+            int ano_insc = Int32.Parse(Console.ReadLine());
             Console.WriteLine("Inserir NOTA a atribuir");
-            int nota = Console.Read();
+            int nota = Int32.Parse(Console.ReadLine());
 
             SqlParameter[] parameters = new SqlParameter[4];
             parameters[0] = new SqlParameter("@param_num_aluno", num_aluno);
@@ -180,11 +232,11 @@ namespace Instituto
         {
             string command = "p_inscreverAlunoEmUC";
             Console.WriteLine("Inserir NÚMERO DE ALUNO");
-            int num_aluno = Console.Read();
+            int num_aluno = Int32.Parse(Console.ReadLine());
             Console.WriteLine("Inserir SIGLA ÚNICA da Unidade Curricular");
             string sig_uc = Console.ReadLine(); 
             Console.WriteLine("Inserir ANO de Inscrição");
-            int ano_insc = Console.Read();
+            int ano_insc = Int32.Parse(Console.ReadLine());
             
             SqlParameter[] parameters = new SqlParameter[3];
             parameters[0] = new SqlParameter("@param_num_aluno", num_aluno);
@@ -208,16 +260,16 @@ namespace Instituto
             Console.WriteLine("Inserir ENDEREÇO do Aluno");
             string endereco = Console.ReadLine();
             Console.WriteLine("Inserir CÓDIGO POSTAL do Aluno");
-            int cod_post = Console.Read();
+            int cod_post = Int32.Parse(Console.ReadLine());
             Console.WriteLine("Inserir LOCALIDADE do Aluno");
             string localidade = Console.ReadLine(); 
             Console.WriteLine("Inserir DATA DE NASCIMENTO do Aluno");
             Console.Write("\nAno:");
-            int ano_nasc = Console.Read();
+            int ano_nasc = Int32.Parse(Console.ReadLine());
             Console.Write("\nMês:");
-            int mes_nasc = Console.Read();
+            int mes_nasc = Int32.Parse(Console.ReadLine());
             Console.Write("\nDia:");
-            int dia_nasc = Console.Read();
+            int dia_nasc = Int32.Parse(Console.ReadLine());
             DateTime data_nasc = new DateTime(ano_nasc, mes_nasc, dia_nasc);
             Console.WriteLine("Inserir SIGLA DO CURSO onde inscrever o Aluno");
             string sig_curs = Console.ReadLine();
@@ -248,7 +300,7 @@ namespace Instituto
             Console.WriteLine("Inserir SIGLA ÚNICA do Departamento onde o Curso se deve inserir");
             string sig_un_dep = Console.ReadLine();
             Console.WriteLine("Inserir NÚMERO DE ANOS do Curso");
-            int num_anos = Console.Read();
+            int num_anos = Int32.Parse(Console.ReadLine());
             
             SqlParameter[] parameters = new SqlParameter[4];
             parameters[0] = new SqlParameter("@param_sig_un", sig_un);
@@ -274,13 +326,13 @@ namespace Instituto
             Console.WriteLine("Inserir SIGLA ÚNICA da Unidade Curricular");
             string sig_uc = Console.ReadLine();
             Console.WriteLine("Inserir NÚMERO DE CRÁDITOS da Unidade Curricular");
-            int num_cred = Console.Read();
+            int num_cred = Int32.Parse(Console.ReadLine());
             Console.WriteLine("Inserir DESCRIÇÃO da Unidade Curricular");
             string descr = Console.ReadLine();
             Console.WriteLine("Inserir SIGLA ÚNICA do Curso onde a Unidade Curricular se deve inserir");
             string sig_un_curs = Console.ReadLine();
             Console.WriteLine("Inserir Número do Semestre correspondente à Unidade Curricular");
-            int semestre = Console.Read();
+            int semestre = Int32.Parse(Console.ReadLine());
             
             SqlParameter[] parameters = new SqlParameter[5];
             parameters[0] = new SqlParameter("@param_sig_uc", sig_uc);
